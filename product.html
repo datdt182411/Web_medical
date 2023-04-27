@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Footcap - Find your footware</title>
+<!--
+    - favicon
+-->
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+<!--
+    - custom css link
+-->
+<link rel="stylesheet" href="./assets/css/product.css">
+
+<!--
+    - google front link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+  rel="stylesheet">
+
+
+
+<!--
+    - btn search
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+
+    <!--
+        - #HEADER
+    -->
+
+    <header class="header " data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+      </a>
+      
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+      
+
+
+        <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo">
+          </a>
+<!--
+    #List function of Web
+-->          
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="intro.html" class="navbar-link">GIỚI THIỆU</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="product.html" class="navbar-link">SẢN PHẨM</a>
+
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Thiết bị y tế</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Vật tư y tế</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">IVD</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Sản phụ khoa</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Vật tư sản</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Dược phẩm & Thực phẩm chức năng</a>
+                </li>
+                
+                <li class="dropdown-item">
+                  <a href="#">Dụng cụ & Vật tư y tế</a>
+                </li>
+  
+              </ul>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="news.html" class="navbar-link">TIN TỨC</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link">LIÊN HỆ</a>
+            </li>
+  
+          </ul>      
+
+<!--
+    #List action of Web
+-->
+          <ul class="nav-action-list">
+          
+            <li>
+              <button class="nav-action-btn">
+                <input type="text" name="search" placeholder="Nhập tên sản phẩm " class="input-field">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+           
+                <span class="nav-action-text">Search</span>
+              </button>
+            </li>
+
+            <li>
+              <a href="#" class="nav-action-btn">
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                <span class="nav-action-text">ĐĂNG NHẬP / ĐĂNG KÝ</span>
+              </a> 
+            </li>
+
+            <li>
+              <button class="nav-action-btn">
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+                <span class="nav-action-text">Wishlist</span>
+
+                <data class="nav-action-badge" value="0" aria-hidden="true">0</data>
+              </button> 
+            </li>
+
+            <li>
+              <button class="nav-action-btn">
+                <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+  
+                <data class="nav-action-text" value="318.00">GIỎ HÀNG : <strong>$318.00</strong></data>
+  
+                <data class="nav-action-badge" value="0" aria-hidden="true">0</data>
+              </button>
+            </li>
+
+          </ul>
+
+        </nav> 
+      </div>
+
+    </header>
+
+    
+  <!--
+    - MAIN
+  -->
+
+    <main>
+      <article>
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+     <!--
+          - SIDEBAR
+      -->    
+
+      <div class="sidebar active  has-scrollbar" data-mobile-menu>
+
+        <div class="sidebar-category">
+
+          <div class="sidebar-top">
+            <h2 class="sidebar-title">Danh mục</h2>
+
+           
+          </div>
+
+          <ul class="sidebar-menu-category-list">
+
+            <li class="sidebar-menu-category">
+
+              <button class="sidebar-accordion-menu " data-accordion-btn>
+
+                <div class="menu-title-flex">
+
+                  <p class="menu-title">Thiết Bị Y Tế</p>
+                </div>
+
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="sidebar-submenu-category-list " data-accordion>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Thiết bị hồi sức cấp cứu</p>
+                    <data value="300" class="stock" title="Available Stock">23</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Chẩn đoán hình ảnh</p>
+                    <data value="60" class="stock" title="Available Stock">60</data>
+                  </a>
+                </li>
+
+              
+
+              </ul>
+
+            </li>
+
+            <li class="sidebar-menu-category">
+
+              <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                <div class="menu-title-flex">
+                 
+
+                  <p class="menu-title">Vật Tư Y Tế</p>
+                </div>
+
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="sidebar-submenu-category-list" data-accordion>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Sản phẩm độc quyền</p>
+                    <data value="45" class="stock" title="Available Stock">45</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Tiêu hao</p>
+                    <data value="75" class="stock" title="Available Stock">75</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Máy xét nghiệm miễn dịch</p>
+                    <data value="35" class="stock" title="Available Stock">35</data>
+                  </a>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="sidebar-menu-category">
+
+              <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                <div class="menu-title-flex">
+                  
+
+                  <p class="menu-title">IVD</p>
+                </div>
+
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="sidebar-submenu-category-list" data-accordion>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Test thử sinh sản</p>
+                    <data value="46" class="stock" title="Available Stock">46</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Test thử bệnh truyền nhiễm</p>
+                    <data value="73" class="stock" title="Available Stock">73</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Test thử nghiện</p>
+                    <data value="61" class="stock" title="Available Stock">61</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Các KIT XN Khác</p>
+                    <data value="61" class="stock" title="Available Stock">61</data>
+                  </a>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="sidebar-menu-category">
+
+              <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                <div class="menu-title-flex">
+              
+
+                  <p class="menu-title">Sản Phụ Khoa</p>
+                </div>
+
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="sidebar-submenu-category-list" data-accordion>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Máy siêu âm</p>
+                    <data value="12" class="stock" title="Available Stock">12 </data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Máy soi cổ tử cung</p>
+                    <data value="60" class="stock" title="Available Stock">60 </data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Máy cắt đốt điện cao tần</p>
+                    <data value="50" class="stock" title="Available Stock">50 </data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Máy cắt đốt hồng ngoại, áp lạnh</p>
+                    <data value="87" class="stock" title="Available Stock">2 </data>
+                  </a>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="sidebar-menu-category">
+
+              <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                <div class="menu-title-flex">
+                  
+
+                  <p class="menu-title">Vật Tư Sản</p>
+                </div>
+
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="sidebar-submenu-category-list" data-accordion>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Dụng cụ tránh thai</p>
+                    <data value="68" class="stock" title="Available Stock">6</data>
+                  </a>
+                </li>
+
+             
+
+              </ul>
+
+            </li>
+
+            <li class="sidebar-menu-category">
+
+              <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                <div class="menu-title-flex">
+               
+
+                  <p class="menu-title">Dược Phẩm,Thực Phẩm Chức Năng</p>
+                </div>
+
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="sidebar-submenu-category-list" data-accordion>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Shiffa Home</p>
+                    <data value="50" class="stock" title="Available Stock">2</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Sản phẩm Sebamed</p>
+                    <data value="48" class="stock" title="Available Stock">9</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Điều trị vết thương</p>
+                    <data value="48" class="stock" title="Available Stock">1</data>
+                  </a>
+                </li>
+
+              </ul>
+
+            </li>
+
+            <li class="sidebar-menu-category">
+
+              <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                <div class="menu-title-flex">
+                 
+
+                  <p class="menu-title">Dụng Cụ, Vật Tư Y Tế</p>
+                </div>
+
+                <div>
+                  <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                  <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="sidebar-submenu-category-list" data-accordion>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Nội thất Y tế</p>
+                    <data value="62" class="stock" title="Available Stock">14</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Dụng cụ khám</p>
+                    <data value="35" class="stock" title="Available Stock">2</data>
+                  </a>
+                </li>
+
+                <li class="sidebar-submenu-category">
+                  <a href="#" class="sidebar-submenu-title">
+                    <p class="product-name">Vật dụng Y tế</p>
+                    <data value="80" class="stock" title="Available Stock">80</data>
+                  </a>
+                </li>
+
+             
+
+              </ul>
+
+            </li>
+
+          </ul>
+
+        </div>
+        
+        
+        <!--
+          - #PRODUCT
+        -->
+        <section class="section product">
+          <div class="container">
+
+            <h2 class="h2 section-title">Tất cả sản phẩm</h2>
+
+            <ul class="product-list">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                    <figure class="card-banner-product">
+                      <img src="./assets/images/product-1.jpg" width="312" height="350" loading="lazy"
+                        alt="Running Sneaker Shoes" class="image-contain-product">
+    
+                      <div class="card-badge">Liên hệ</div>
+    
+                      <ul class="card-action-list">
+    
+                        <li class="card-action-item">
+                          <button class="card-action-btn" aria-labelledby="card-label-1">
+                            <ion-icon name="cart-outline"></ion-icon>
+                          </button>
+    
+                          <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                        </li>
+    
+    
+                        <li class="card-action-item">
+                          <button class="card-action-btn" aria-labelledby="card-label-3">
+                            <ion-icon name="eye-outline"></ion-icon>
+                          </button>
+    
+                          <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                        </li>
+    
+                        <li class="card-action-item">
+                          <button class="card-action-btn" aria-labelledby="card-label-4">
+                            <ion-icon name="repeat-outline"></ion-icon>
+                          </button>
+    
+                          <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                        </li>
+    
+                      </ul>
+                    </figure>
+    
+                    <div class="card-content">
+
+                      <h3 class="h3 card-title">
+                        <a href="#">Kit ELISA hs-CRP</a>
+                      </h3>
+    
+                      <data class="card-price" value="180.85">$180.85</data>
+    
+                    </div>
+    
+                  </div>
+                </li>
+
+              <li class="product-item">
+                  <div class="product-card" tabindex="0">
+  
+                      <figure class="card-banner-product">
+                        <img src="./assets/images/product-2.jpg" width="312" height="350" loading="lazy"
+                          alt="Running Sneaker Shoes" class="image-contain-product">
+      
+                        <div class="card-badge">Liên hệ</div>
+      
+                        <ul class="card-action-list">
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                              <ion-icon name="cart-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                          </li>
+      
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                          </li>
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                              <ion-icon name="repeat-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                          </li>
+      
+                        </ul>
+                      </figure>
+      
+                      <div class="card-content">
+  
+                        <h3 class="h3 card-title">
+                          <a href="#">Betaclor® Viên Đặt Âm Đạo</a>
+                        </h3>
+      
+                        <data class="card-price" value="180.85">$180.85</data>
+      
+                      </div>
+      
+                    </div>
+                </li> 
+               
+              <li class="product-item">
+                  <div class="product-card" tabindex="0">
+  
+                      <figure class="card-banner-product">
+                        <img src="./assets/images/product-3.jpg" width="312" height="350" loading="lazy"
+                          alt="Running Sneaker Shoes" class="image-contain-product">
+      
+                        <div class="card-badge">Liên hệ</div>
+      
+                        <ul class="card-action-list">
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                              <ion-icon name="cart-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                          </li>
+      
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                          </li>
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                              <ion-icon name="repeat-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                          </li>
+      
+                        </ul>
+                      </figure>
+      
+                      <div class="card-content">
+  
+                        <h3 class="h3 card-title">
+                          <a href="#">Criorectum® Dilator Trị Liệu Nhiệt Lạnh Hậu Môn Trĩ</a>
+                        </h3>
+      
+                        <data class="card-price" value="180.85">$180.85</data>
+      
+                      </div>
+      
+                    </div>
+                </li>
+
+              <li class="product-item">
+                    <div class="product-card" tabindex="0">
+    
+                        <figure class="card-banner-product">
+                          <img src="./assets/images/product-4.jpg" width="312" height="350" loading="lazy"
+                            alt="Running Sneaker Shoes" class="image-contain-product">
+        
+                          <div class="card-badge">Liên hệ</div>
+        
+                          <ul class="card-action-list">
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-1">
+                                <ion-icon name="cart-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                            </li>
+        
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-3">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                            </li>
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-4">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                            </li>
+        
+                          </ul>
+                        </figure>
+        
+                        <div class="card-content">
+    
+                          <h3 class="h3 card-title">
+                            <a href="#">Influprop® Austria 🇦🇹 Xịt Mũi Xoang</a>
+                          </h3>
+        
+                          <data class="card-price" value="180.85">$180.85</data>
+        
+                        </div>
+        
+                      </div>
+                  </li>  
+                  
+              <li class="product-item">
+                    <div class="product-card" tabindex="0">
+    
+                        <figure class="card-banner-product">
+                          <img src="./assets/images/product-5.jpg" width="312" height="350" loading="lazy"
+                            alt="Running Sneaker Shoes" class="image-contain-product">
+        
+                          <div class="card-badge">Liên hệ</div>
+        
+                          <ul class="card-action-list">
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-1">
+                                <ion-icon name="cart-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                            </li>
+        
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-3">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                            </li>
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-4">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                            </li>
+        
+                          </ul>
+                        </figure>
+        
+                        <div class="card-content">
+    
+                          <h3 class="h3 card-title">
+                            <a href="#">Intec H.pylori Test Nhanh Virus H.pylori</a>
+                          </h3>
+        
+                          <data class="card-price" value="180.85">$180.85</data>
+        
+                        </div>
+        
+                      </div>
+                  </li>    
+              
+              <li class="product-item">
+                    <div class="product-card" tabindex="0">
+    
+                        <figure class="card-banner-product">
+                          <img src="./assets/images/product-6.jpg" width="312" height="350" loading="lazy"
+                            alt="Running Sneaker Shoes" class="image-contain-product">
+        
+                          <div class="card-badge">Liên hệ</div>
+        
+                          <ul class="card-action-list">
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-1">
+                                <ion-icon name="cart-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                            </li>
+        
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-3">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                            </li>
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-4">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                            </li>
+        
+                          </ul>
+                        </figure>
+        
+                        <div class="card-content">
+    
+                          <h3 class="h3 card-title">
+                            <a href="#">InTect HBsAg Test Nhanh Viên Gan B</a>
+                          </h3>
+        
+                          <data class="card-price" value="180.85">$180.85</data>
+        
+                        </div>
+        
+                      </div>
+                    </li>  
+                    
+              <li class="product-item">
+                      <div class="product-card" tabindex="0">
+      
+                          <figure class="card-banner-product">
+                            <img src="./assets/images/product-7.jpg" width="312" height="350" loading="lazy"
+                              alt="Running Sneaker Shoes" class="image-contain-product">
+          
+                            <div class="card-badge">Liên hệ</div>
+          
+                            <ul class="card-action-list">
+          
+                              <li class="card-action-item">
+                                <button class="card-action-btn" aria-labelledby="card-label-1">
+                                  <ion-icon name="cart-outline"></ion-icon>
+                                </button>
+          
+                                <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                              </li>
+          
+          
+                              <li class="card-action-item">
+                                <button class="card-action-btn" aria-labelledby="card-label-3">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+          
+                                <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                              </li>
+          
+                              <li class="card-action-item">
+                                <button class="card-action-btn" aria-labelledby="card-label-4">
+                                  <ion-icon name="repeat-outline"></ion-icon>
+                                </button>
+          
+                                <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                              </li>
+          
+                            </ul>
+                          </figure>
+          
+                          <div class="card-content">
+      
+                            <h3 class="h3 card-title">
+                              <a href="#">InTec HCV Test Nhanh Viêm Gan C</a>
+                            </h3>
+          
+                            <data class="card-price" value="180.85">$180.85</data>
+          
+                          </div>
+          
+                        </div>
+                      </li>      
+
+        </section>
+
+      </div>
+    </div>
+  </div>  
+</article>
+</main>
+
+    <!--
+  - #FOOTER
+    -->
+<footer class="footer">
+
+  <div class="footer-top section">
+    <div class="container">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+        </a>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-link-box">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Liên Hệ</p>
+          </li>
+
+          <li>
+            <address class="footer-link">
+              <ion-icon name="location"></ion-icon>
+
+              <span class="footer-link-text">
+                Trụ Sở: Toà G3 Vinhomes Green Bay, Mễ Trì, Nam Từ Liêm, Hà Nội
+              </span>
+            </address>
+          </li>
+
+          <li>
+            <a href="tel: 0243 20 559 29" class="footer-link">
+              <ion-icon name="call"></ion-icon>
+
+              <span class="footer-link-text">Tel / Fax: 0243 20 559 29 - Helpline: 096 99 324 99 </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto: congtyxyz@gmail.com" class="footer-link">
+              <ion-icon name="mail"></ion-icon>
+
+              <span class="footer-link-text">congtyxyz@gmail.com</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Tài khoản của tôi</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">My Account</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">View Cart</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">Wishlist</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">Compare</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">New Products</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Opening Time</p>
+
+          <table class="footer-table">
+            <tbody>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Mon - Tue:</th>
+
+                <td class="table-data">8AM - 10PM</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Wed:</th>
+
+                <td class="table-data">8AM - 7PM</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Fri:</th>
+
+                <td class="table-data">7AM - 12PM</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Sat:</th>
+
+                <td class="table-data">9AM - 8PM</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Sun:</th>
+
+                <td class="table-data">Closed</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Newsletter</p>
+
+          <p class="newsletter-text">
+            Authoritatively morph 24/7 potentialities with error-free partnerships.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+            <button type="submit" class="btn btn-primary">Đăng ký</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">CÔNG TY CÔ PHẦN VẬT TƯ Y TẾ XYZ</a>. All Rights Reserved
+      </p>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn active" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+<!--
+    - custom js link
+-->
+<script src="./assets/js/product.js"></script>
+
+<!--
+    - iomicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

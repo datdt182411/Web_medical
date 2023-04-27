@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Công ty TNHH thiết bị Y tế XYZ</title>
+<!--
+    - favicon
+-->
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+<!--
+    - custom css link
+-->
+<link rel="stylesheet" href="./assets/css/style.css">
+
+<!--
+    - google front link
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+  rel="stylesheet">
+
+<!-- 
+    - preload banner
+-->
+  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+
+<!--
+    - btn search
+-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+
+
+    <!--
+        - #HEADER
+    -->
+
+    <header class="header " data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="index.html" class="logo">
+        <img src="./assets/images/Vinamed.svg" width="160" height="50" alt="Footcap logo">
+      </a>
+      
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+      
+
+
+        <a href="#" class="logo">
+            <img src="./assets/images/Vinamed.svg" width="190" height="50" alt="Footcap logo">
+          </a>
+<!--
+    #List function of Web
+-->          
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">TRANG CHỦ</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="intro.html" class="navbar-link">GIỚI THIỆU</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="product.html" class="navbar-link">SẢN PHẨM</a>
+
+              <ul class="dropdown-list">
+  
+                <li class="dropdown-item">
+                  <a href="#">Thiết bị y tế</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">Vật tư y tế</a>
+                </li>
+  
+                <li class="dropdown-item">
+                  <a href="#">IVD</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Sản phụ khoa</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Vật tư sản</a>
+                </li>
+
+                <li class="dropdown-item">
+                  <a href="#">Dược phẩm & Thực phẩm chức năng</a>
+                </li>
+                
+                <li class="dropdown-item">
+                  <a href="#">Dụng cụ & Vật tư y tế</a>
+                </li>
+  
+              </ul>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="news.html" class="navbar-link">TIN TỨC</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link">LIÊN HỆ</a>
+            </li>
+  
+          </ul>      
+
+<!--
+    #List action of Web
+-->
+          <ul class="nav-action-list">
+          
+            <li>
+              <button class="nav-action-btn">
+                <input type="text" name="search" placeholder="Nhập tên sản phẩm " class="input-field">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+           
+                <span class="nav-action-text">Search</span>
+              </button>
+            </li>
+
+            <li>
+              <a href="#" class="nav-action-btn">
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                <span class="nav-action-text">ĐĂNG NHẬP / ĐĂNG KÝ</span>
+              </a> 
+            </li>
+
+            <li>
+              <button class="nav-action-btn">
+                <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+                <span class="nav-action-text">Wishlist</span>
+
+                <data class="nav-action-badge" value="0" aria-hidden="true">0</data>
+              </button> 
+            </li>
+
+            <li>
+              <button class="nav-action-btn">
+                <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+  
+                <data class="nav-action-text" value="318.00">GIỎ HÀNG : <strong>$318.00</strong></data>
+  
+                <data class="nav-action-badge" value="0" aria-hidden="true">0</data>
+              </button>
+            </li>
+
+          </ul>
+
+        </nav> 
+      </div>
+
+    </header>
+
+
+
+    <main>
+      <article>
+
+        <!--
+          - #HERO
+        -->
+
+        <section class="section hero" style="background-image: url('./assets/images/hero-banner.png')">
+          <div class="container">
+
+            <h2 class="h1 hero-title">
+              VỀ CHÚNG TÔI
+              
+              <strong> CÔNG TY CỔ PHẦN VẬT TƯ Y TẾ XYZ</strong>
+            </h2>
+
+            <p class="hero-text">
+              Là đơn vị chuyên cung cấp các sản phẩm cho các đối tác tại các trung tâm kinh doanh dược,
+              thiết bị y tế cũng như cung cấp trực tiếp cho các cơ sở y tế, bệnh viện trên cả nước
+              
+            </p>
+
+            <button class="btn btn-primary">
+              <span>MUA NGAY</span>
+  
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+          </div>
+        </section>
+
+
+
+
+      <!--
+          - #COLLECTION
+      -->
+
+      <section class="section collection">
+          <div class="container">
+
+          <h2 class="h2 section-title">DANH MỤC SẢN PHẨM</h2>
+
+            <ul class="collection-list has-scrollbar">
+
+              <li>
+                <div class="collection-card" style="background-image: url('./assets/images/collection-1.jpg')">
+                  <h3 class="h4 card-title">THIẾT BỊ Y TẾ</h3>
+  
+                  <a href="#" class="btn btn-secondary">
+                    <span>CHI TIẾT</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card" style="background-image: url('./assets/images/collection-2.jpg')">
+                  <h3 class="h4 card-title">VẬT TƯ Y TẾ</h3>
+  
+                  <a href="#" class="btn btn-secondary">
+                    <span>CHI TIẾT</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card" style="background-image: url('./assets/images/collection-3.jpg')">
+                  <h3 class="h4 card-title">IVD</h3>
+  
+                  <a href="#" class="btn btn-secondary">
+                    <span>CHI TIẾT</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card" style="background-image: url('./assets/images/collection-4.jpg')">
+                  <h3 class="h4 card-title">SẢN PHỤ KHOA</h3>
+  
+                  <a href="#" class="btn btn-secondary">
+                    <span>CHI TIẾT</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card" style="background-image: url('./assets/images/collection-5.jpg')">
+                  <h3 class="h4 card-title">VẬT TƯ SẢN</h3>
+  
+                  <a href="#" class="btn btn-secondary">
+                    <span>CHI TIẾT</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card" style="background-image: url('./assets/images/collection-6.jpg')">
+                  <h3 class="h4 card-title">DƯỢC MỸ PHẨM,<br> THỰC PHẨM CHỨC NĂNG</h3></br>
+  
+                  <a href="#" class="btn btn-secondary">
+                    <span>CHI TIẾT</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <div class="collection-card" style="background-image: url('./assets/images/collection-7.jpg')">
+                  <h3 class="h4 card-title">DỤNG CỤ - VẬT <br> TƯ Y TẾ</h3></br>
+  
+                  <a href="#" class="btn btn-secondary">
+                    <span>CHI TIẾT</span>
+  
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!--
+          - #BRAND
+        -->
+        <section class="section brand">
+          <div class="container">
+
+            <h2 class="h2 section-title">THƯƠNG HIỆU</h2>
+
+            <ul class="brand-list">
+              <li class="brand-item">
+                <div class="brand-card" tabindex="0">
+
+                  <figure class="card-banner">
+                    <img src="./assets/images/brand-1.png" width="200" height="200" loading="lazy"
+                      alt="Erbozeta" class="image-contain">
+  
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h3 class="h3 card-title">
+                      <a href="#">Erbozeta</a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li class="brand-item">
+                  <div class="brand-card" tabindex="0">
+  
+                    <figure class="card-banner">
+                      <img src="./assets/images/brand-2.png" width="200" height="200" loading="lazy"
+                        alt="R5RMED" class="image-contain">
+    
+                    </figure>
+                    <div class="card-content">
+  
+                      <h3 class="h3 card-title">
+                        <a href="#">5RMED</a>
+                      </h3>
+    
+                    </div>
+    
+                  </div>
+                </li>
+
+                <li class="brand-item">
+                  <div class="brand-card" tabindex="0">
+  
+                    <figure class="card-banner">
+                      <img src="./assets/images/brand-3.png" width="200" height="200" loading="lazy"
+                        alt="CTK BioTech" class="image-contain">
+    
+                    </figure>
+  
+                    <div class="card-content">
+  
+                      <h3 class="h3 card-title">
+                        <a href="#">CTK BioTech</a>
+                      </h3>
+    
+                    </div>
+    
+                  </div>
+                  </li>  
+
+                  <li class="brand-item">
+                    <div class="brand-card" tabindex="0">
+    
+                      <figure class="card-banner">
+                        <img src="./assets/images/brand-4.png" width="200" height="200" loading="lazy"
+                          alt="ALBOMED" class="image-contain">
+      
+                      </figure>
+    
+                      <div class="card-content">
+    
+                        <h3 class="h3 card-title">
+                          <a href="#">ALBOMED</a>
+                        </h3>
+      
+                      </div>
+      
+                    </div>
+                    </li>  
+
+                    <li class="brand-item">
+                      <div class="brand-card" tabindex="0">
+      
+                        <figure class="card-banner">
+                          <img src="./assets/images/brand-5.png" width="200" height="200" loading="lazy"
+                            alt="Cagdas Medikal" class="image-contain">
+        
+                        </figure>
+      
+                        <div class="card-content">
+      
+                          <h3 class="h3 card-title">
+                            <a href="#">Cagdas Medikal</a>
+                          </h3>
+        
+                        </div>
+        
+                      </div>
+                      </li>  
+
+                    <li class="brand-item">
+                        <div class="brand-card" tabindex="0">
+        
+                          <figure class="card-banner">
+                            <img src="./assets/images/brand-6.png" width="200" height="200" loading="lazy"
+                              alt="AMPall" class="image-contain">
+          
+                          </figure>
+        
+                          <div class="card-content">
+        
+                            <h3 class="h3 card-title">
+                              <a href="#">AMPall</a>
+                            </h3>
+          
+                          </div>
+          
+                        </div>
+                      </li>  
+
+                      <li class="brand-item">
+                          <div class="brand-card" tabindex="0">
+          
+                            <figure class="card-banner">
+                              <img src="./assets/images/brand-7.png" width="200" height="200" loading="lazy"
+                                alt=">Mindray" class="image-contain">
+            
+                            </figure>
+          
+                            <div class="card-content">
+          
+                              <h3 class="h3 card-title">
+                                <a href="#">Mindray</a>
+                              </h3>
+            
+                            </div>
+            
+                          </div>
+                        </li>    
+
+                        <li class="brand-item">
+                          <div class="brand-card" tabindex="0">
+          
+                            <figure class="card-banner">
+                              <img src="./assets/images/brand-8.png" width="200" height="200" loading="lazy"
+                                alt="MEDICPRO" class="image-contain">
+            
+                            </figure>
+          
+                            <div class="card-content">
+          
+                              <h3 class="h3 card-title">
+                                <a href="#">MEDICPRO</a>
+                              </h3>
+            
+                            </div>
+            
+                          </div>
+                      </li>    
+            </ul>
+
+
+          </div>
+
+
+        </section>
+
+
+        <!--
+          - #PRODUCT
+        -->
+        <section class="section product">
+          <div class="container">
+
+            <h2 class="h2 section-title">DÀNH CHO BẠN</h2>
+
+            <ul class="product-list">
+
+              <li class="product-item">
+                <div class="product-card" tabindex="0">
+
+                    <figure class="card-banner-product">
+                      <img src="./assets/images/product-1.jpg" width="312" height="350" loading="lazy"
+                        alt="Running Sneaker Shoes" class="image-contain-product">
+    
+                      <div class="card-badge">Liên hệ</div>
+    
+                      <ul class="card-action-list">
+    
+                        <li class="card-action-item">
+                          <button class="card-action-btn" aria-labelledby="card-label-1">
+                            <ion-icon name="cart-outline"></ion-icon>
+                          </button>
+    
+                          <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                        </li>
+    
+    
+                        <li class="card-action-item">
+                          <button class="card-action-btn" aria-labelledby="card-label-3">
+                            <ion-icon name="eye-outline"></ion-icon>
+                          </button>
+    
+                          <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                        </li>
+    
+                        <li class="card-action-item">
+                          <button class="card-action-btn" aria-labelledby="card-label-4">
+                            <ion-icon name="repeat-outline"></ion-icon>
+                          </button>
+    
+                          <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                        </li>
+    
+                      </ul>
+                    </figure>
+    
+                    <div class="card-content">
+
+                      <h3 class="h3 card-title">
+                        <a href="#">Kit ELISA hs-CRP</a>
+                      </h3>
+    
+                      <data class="card-price" value="180.85">$180.85</data>
+    
+                    </div>
+    
+                  </div>
+                </li>
+
+              <li class="product-item">
+                  <div class="product-card" tabindex="0">
+  
+                      <figure class="card-banner-product">
+                        <img src="./assets/images/product-2.jpg" width="312" height="350" loading="lazy"
+                          alt="Running Sneaker Shoes" class="image-contain-product">
+      
+                        <div class="card-badge">Liên hệ</div>
+      
+                        <ul class="card-action-list">
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                              <ion-icon name="cart-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                          </li>
+      
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                          </li>
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                              <ion-icon name="repeat-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                          </li>
+      
+                        </ul>
+                      </figure>
+      
+                      <div class="card-content">
+  
+                        <h3 class="h3 card-title">
+                          <a href="#">Betaclor® Viên Đặt Âm Đạo</a>
+                        </h3>
+      
+                        <data class="card-price" value="180.85">$180.85</data>
+      
+                      </div>
+      
+                    </div>
+                </li> 
+               
+              <li class="product-item">
+                  <div class="product-card" tabindex="0">
+  
+                      <figure class="card-banner-product">
+                        <img src="./assets/images/product-3.jpg" width="312" height="350" loading="lazy"
+                          alt="Running Sneaker Shoes" class="image-contain-product">
+      
+                        <div class="card-badge">Liên hệ</div>
+      
+                        <ul class="card-action-list">
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-1">
+                              <ion-icon name="cart-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                          </li>
+      
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-3">
+                              <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                          </li>
+      
+                          <li class="card-action-item">
+                            <button class="card-action-btn" aria-labelledby="card-label-4">
+                              <ion-icon name="repeat-outline"></ion-icon>
+                            </button>
+      
+                            <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                          </li>
+      
+                        </ul>
+                      </figure>
+      
+                      <div class="card-content">
+  
+                        <h3 class="h3 card-title">
+                          <a href="#">Criorectum® Dilator Trị Liệu Nhiệt Lạnh Hậu Môn Trĩ</a>
+                        </h3>
+      
+                        <data class="card-price" value="180.85">$180.85</data>
+      
+                      </div>
+      
+                    </div>
+                </li>
+
+              <li class="product-item">
+                    <div class="product-card" tabindex="0">
+    
+                        <figure class="card-banner-product">
+                          <img src="./assets/images/product-4.jpg" width="312" height="350" loading="lazy"
+                            alt="Running Sneaker Shoes" class="image-contain-product">
+        
+                          <div class="card-badge">Liên hệ</div>
+        
+                          <ul class="card-action-list">
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-1">
+                                <ion-icon name="cart-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                            </li>
+        
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-3">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                            </li>
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-4">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                            </li>
+        
+                          </ul>
+                        </figure>
+        
+                        <div class="card-content">
+    
+                          <h3 class="h3 card-title">
+                            <a href="#">Influprop® Austria 🇦🇹 Xịt Mũi Xoang</a>
+                          </h3>
+        
+                          <data class="card-price" value="180.85">$180.85</data>
+        
+                        </div>
+        
+                      </div>
+                  </li>  
+                  
+              <li class="product-item">
+                    <div class="product-card" tabindex="0">
+    
+                        <figure class="card-banner-product">
+                          <img src="./assets/images/product-5.jpg" width="312" height="350" loading="lazy"
+                            alt="Running Sneaker Shoes" class="image-contain-product">
+        
+                          <div class="card-badge">Liên hệ</div>
+        
+                          <ul class="card-action-list">
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-1">
+                                <ion-icon name="cart-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                            </li>
+        
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-3">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                            </li>
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-4">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                            </li>
+        
+                          </ul>
+                        </figure>
+        
+                        <div class="card-content">
+    
+                          <h3 class="h3 card-title">
+                            <a href="#">Intec H.pylori Test Nhanh Virus H.pylori</a>
+                          </h3>
+        
+                          <data class="card-price" value="180.85">$180.85</data>
+        
+                        </div>
+        
+                      </div>
+                  </li>    
+              
+              <li class="product-item">
+                    <div class="product-card" tabindex="0">
+    
+                        <figure class="card-banner-product">
+                          <img src="./assets/images/product-6.jpg" width="312" height="350" loading="lazy"
+                            alt="Running Sneaker Shoes" class="image-contain-product">
+        
+                          <div class="card-badge">Liên hệ</div>
+        
+                          <ul class="card-action-list">
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-1">
+                                <ion-icon name="cart-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                            </li>
+        
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-3">
+                                <ion-icon name="eye-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                            </li>
+        
+                            <li class="card-action-item">
+                              <button class="card-action-btn" aria-labelledby="card-label-4">
+                                <ion-icon name="repeat-outline"></ion-icon>
+                              </button>
+        
+                              <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                            </li>
+        
+                          </ul>
+                        </figure>
+        
+                        <div class="card-content">
+    
+                          <h3 class="h3 card-title">
+                            <a href="#">InTect HBsAg Test Nhanh Viên Gan B</a>
+                          </h3>
+        
+                          <data class="card-price" value="180.85">$180.85</data>
+        
+                        </div>
+        
+                      </div>
+                    </li>  
+                    
+              <li class="product-item">
+                      <div class="product-card" tabindex="0">
+      
+                          <figure class="card-banner-product">
+                            <img src="./assets/images/product-7.jpg" width="312" height="350" loading="lazy"
+                              alt="Running Sneaker Shoes" class="image-contain-product">
+          
+                            <div class="card-badge">Liên hệ</div>
+          
+                            <ul class="card-action-list">
+          
+                              <li class="card-action-item">
+                                <button class="card-action-btn" aria-labelledby="card-label-1">
+                                  <ion-icon name="cart-outline"></ion-icon>
+                                </button>
+          
+                                <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                              </li>
+          
+          
+                              <li class="card-action-item">
+                                <button class="card-action-btn" aria-labelledby="card-label-3">
+                                  <ion-icon name="eye-outline"></ion-icon>
+                                </button>
+          
+                                <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                              </li>
+          
+                              <li class="card-action-item">
+                                <button class="card-action-btn" aria-labelledby="card-label-4">
+                                  <ion-icon name="repeat-outline"></ion-icon>
+                                </button>
+          
+                                <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                              </li>
+          
+                            </ul>
+                          </figure>
+          
+                          <div class="card-content">
+      
+                            <h3 class="h3 card-title">
+                              <a href="#">InTec HCV Test Nhanh Viêm Gan C</a>
+                            </h3>
+          
+                            <data class="card-price" value="180.85">$180.85</data>
+          
+                          </div>
+          
+                        </div>
+                      </li>      
+
+        </section>
+        <button class="btn btn-product">
+          <span>XEM THÊM</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+    <!--
+      - #SERVICE
+    -->    
+    <section class="section service">
+      <div class="container">
+
+        <ul class="service-list">
+
+          <li class="service-item">
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/service-1.png" width="53" height="28" loading="lazy" alt="Service icon">
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">MIỄN PHÍ VẬN CHUYỂN</h3>
+
+                <p class="card-text">
+                  CHO CÁC ĐƠN HÀNG HƠN <span>$150</span>
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/service-2.png" width="43" height="35" loading="lazy" alt="Service icon">
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">THANH TOÁN NHANH</h3>
+
+                <p class="card-text">
+                  100% THANH TOÁN AN TOÀN
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/service-3.png" width="40" height="40" loading="lazy" alt="Service icon">
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">MIỄN PHÍ HOÀN TRẢ</h3>
+
+                <p class="card-text">
+                  TIỀN TRẢ LẠI TRONG 30 NGÀY
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="service-item">
+            <div class="service-card">
+
+              <div class="card-icon">
+                <img src="./assets/images/service-4.png" width="40" height="40" loading="lazy" alt="Service icon">
+              </div>
+
+              <div>
+                <h3 class="h4 card-title">HỖ TRỢ 24/7</h3>
+
+                <p class="card-text">
+                  NHẬN HỖ TRỢ NHANH
+                </p>
+              </div>
+
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+      </article>
+    </main>
+
+    <!--
+      - #NEWS
+    -->
+    <section class="section news">
+      <div class="container-information">
+        <div class="container-news ">
+          <h2 class="h2 section-title-news">TIN MỚI</h2>
+
+          <ul class="news-list">
+            <li class="news-item">
+              <div class="news-card" tabindex="0">
+                <figure class="card-banner-news">
+                  <img src="./assets/images/news-1.jpg" width="312" height="350" loading="lazy"
+                    class="image-contain-news">
+                </figure>
+
+                    <p class="p1 news-title">
+                      <a href="https://vimedtec.com/vimedtec-hop-tac-chien-luoc-va-phan-phoi-doc-quyen-vien-dat-am-dao-betaclor.stm"> Độc quyền phân phối viên  đặt phu khoa Betaclor </a>
+                    </p>  
+
+                    <p class="news-button">
+                      <a href="https://vimedtec.com/vimedtec-hop-tac-chien-luoc-va-phan-phoi-doc-quyen-vien-dat-am-dao-betaclor.stm"> Xem thêm </a>
+                    </p>
+                   
+
+              </div>
+
+            </li>
+
+            <li class="news-item">
+              <div class="news-card" tabindex="0">
+                <figure class="card-banner-news">
+                  <img src="./assets/images/news-2.jpg" width="312" height="350" loading="lazy"
+                    class="image-contain-news">
+                </figure>
+
+                   <p class="p1 news-title">
+                      <a href="https://vimedtec.com/1974.stm"> Giá máy siêu âm, Giá máy siêu âm 4D, máy siêu âm 5D màu, máy siêu âm 4D hd live SIUI</a>
+                   </p>  
+
+                   <p class="news-button">
+                    <a href="https://vimedtec.com/vimedtec-hop-tac-chien-luoc-va-phan-phoi-doc-quyen-vien-dat-am-dao-betaclor.stm"> Xem thêm </a>
+                  </p>
+
+              </div>
+
+            </li>
+
+            <li class="news-item">
+              <div class="news-card" tabindex="0">
+                <figure class="card-banner-news">
+                  <img src="./assets/images/news-3.jpg" width="312" height="350" loading="lazy"
+                    class="image-contain-news">
+                </figure>
+
+                    <p class="p1 news-title">
+                      <a href="https://vimedtec.com/Dai-hoi-tim-mach-toan-quoc-lan-thu-18.stm">ĐẠI HỘI TIM MẠCH TOÀN QUỐC LẦN THỨ 18 </a>
+                    </p>  
+
+                    <p class="news-button">
+                      <a href="https://vimedtec.com/vimedtec-hop-tac-chien-luoc-va-phan-phoi-doc-quyen-vien-dat-am-dao-betaclor.stm"> Xem thêm </a>
+                    </p>
+
+              </div>
+
+            </li>
+
+            <li class="news-item">
+              <div class="news-card" tabindex="0">
+                <figure class="card-banner-news">
+                  <img src="./assets/images/news-4.jpg" width="312" height="350" loading="lazy"
+                    class="image-contain-news">
+                </figure>
+
+                  <p class="p1 news-title">
+                      <a href="https://vimedtec.com/Tieu-chuan-Iso-13485:-2022-cho-thiet-bi-y-te.stm"> Tiêu chuẩn ISO 13485: 2012 cho thiết bị y tế</a>
+                  </p>  
+
+                  <p class="news-button">
+                    <a href="https://vimedtec.com/vimedtec-hop-tac-chien-luoc-va-phan-phoi-doc-quyen-vien-dat-am-dao-betaclor.stm"> Xem thêm </a>
+                  </p>
+
+              </div>
+
+            </li>
+          </ul>
+
+        </div>
+        
+
+    </section>
+
+
+<!--
+  - #FOOTER
+-->
+<footer class="footer">
+
+  <div class="footer-top section">
+    <div class="container">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/Vinamed.svg" width="160" height="50" alt="Footcap logo">
+        </a>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-link-box">
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Liên Hệ</p>
+          </li>
+
+          <li>
+            <address class="footer-link">
+              <ion-icon name="location"></ion-icon>
+
+              <span class="footer-link-text">
+                Trụ Sở: Toà G3 Vinhomes Green Bay, Mễ Trì, Nam Từ Liêm, Hà Nội
+              </span>
+            </address>
+          </li>
+
+          <li>
+            <a href="tel: 0243 20 559 29" class="footer-link">
+              <ion-icon name="call"></ion-icon>
+
+              <span class="footer-link-text">Tel / Fax: 0243 20 559 29 - Helpline: 096 99 324 99 </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto: congtyxyz@gmail.com" class="footer-link">
+              <ion-icon name="mail"></ion-icon>
+
+              <span class="footer-link-text">congtyxyz@gmail.com</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Tài khoản của tôi</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">My Account</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">View Cart</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">Wishlist</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">Compare</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+
+              <span class="footer-link-text">New Products</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Opening Time</p>
+
+          <table class="footer-table">
+            <tbody>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Mon - Tue:</th>
+
+                <td class="table-data">8AM - 10PM</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Wed:</th>
+
+                <td class="table-data">8AM - 7PM</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Fri:</th>
+
+                <td class="table-data">7AM - 12PM</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Sat:</th>
+
+                <td class="table-data">9AM - 8PM</td>
+              </tr>
+
+              <tr class="table-row">
+                <th class="table-head" scope="row">Sun:</th>
+
+                <td class="table-data">Closed</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Newsletter</p>
+
+          <p class="newsletter-text">
+            Authoritatively morph 24/7 potentialities with error-free partnerships.
+          </p>
+
+          <form action="" class="newsletter-form">
+            <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+            <button type="submit" class="btn btn-primary">Đăng ký</button>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2022 <a href="#" class="copyright-link">CÔNG TY CÔ PHẦN VẬT TƯ Y TẾ XYZ</a>. All Rights Reserved
+      </p>
+
+    </div>
+  </div>
+
+</footer>
+
+
+<!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn active" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+<!--
+    - custom js link
+-->
+<script src="./assets/js/script.js"></script>
+
+<!--
+    - iomicon link
+-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
